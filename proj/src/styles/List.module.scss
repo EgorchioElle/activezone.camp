@@ -1,1 +1,19 @@
 /* list Component */
+
+.title{
+    @apply text-xl text-white mb-3
+    sm:text-5xl sm:mb-5;
+}
+
+.list-item{
+    @apply text-lg text-white pl-2 mb-2
+    sm:text-3xl sm:mb-4 sm:pl-20;
+}
+
+.title-red{
+    @apply text-primary-100;
+}
+
+.title-blue{
+    @apply text-primary-200;
+}

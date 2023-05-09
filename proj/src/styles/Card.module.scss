@@ -1,0 +1,6 @@
+/* Card Component */
+
+.card{
+    @apply scale-75 md:scale-90 transition-all
+    hover:brightness-110 hover:rotate-3;
+}

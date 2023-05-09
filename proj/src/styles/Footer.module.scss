@@ -1,0 +1,10 @@
+/* Footer Component */
+
+.footer{
+    @apply w-full absolute bottom-0 left-0 flex justify-center;
+}
+
+.footer-text{
+    @apply text-sm text-zinc-200 tracking-widest absolute bottom-2
+    md:text-lg
+}

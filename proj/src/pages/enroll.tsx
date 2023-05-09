@@ -14,9 +14,9 @@ const Enroll: FC = () => {
         
       </Head>
 
-      <body>
+      <main>
 
-      </body>
+      </main>
     </>
   );
 };

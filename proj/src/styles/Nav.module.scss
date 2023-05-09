@@ -1,1 +1,76 @@
 /* Nav Component */
+
+.nav{
+    @apply fixed top-0 left-0 h-16 md:h-28 w-full bg-black z-10 bg-opacity-80
+    flex items-center justify-center sm:justify-between overflow-hidden shadow-nav-shadow;
+}
+
+.logo{
+    @apply scale-50 -ml-8
+    md:scale-90 md:ml-16;
+}
+
+.button{
+    @apply text-white text-2xl bg-primary-100 px-8 py-4 rounded-full transition-all
+    uppercase tracking-widest shadow-main-button mr-16
+    hover:bg-primary-200 hover:shadow-none;
+}
+
+.modal-button{
+    @apply text-white text-2xl bg-primary-100 px-8 py-4 rounded-full transition-all
+    uppercase tracking-widest shadow-main-button z-30
+    hover:bg-primary-200 hover:shadow-none;
+}
+
+// Burger Start
+
+.burger{
+    @apply transition-all z-30 flex flex-col gap-1 mr-16;
+    display: none
+}
+
+.span-1,
+.span-3{
+    @apply w-12 h-1 bg-primary-200 rounded-full transition-all;
+}
+
+.span-2{
+    @apply w-12 h-1 bg-primary-100 rounded-full transition-all;
+}
+
+.burger-close .span-1{
+    @apply translate-y-2 rotate-45 ;
+}
+
+.burger-close .span-2{
+    @apply opacity-0 rotate-90;
+}
+
+.burger-close .span-3{
+    @apply -translate-y-2 -rotate-45;
+}
+
+// Burger End --- Modal Start
+
+.modal{
+    @apply fixed w-full h-screen top-0 left-0 transition-all bg-black flex justify-center items-center z-20;
+}
+
+.modal-open{
+    @apply opacity-100 bg-opacity-50;
+}
+
+.modal-closed{
+    @apply opacity-0 pointer-events-none;
+}
+
+// Modal End --- Media Query
+
+@media screen and (max-width: 768px) {
+    .button{
+        display: none;
+    }
+    .burger{
+        display:flex;
+    }
+}
