@@ -19,6 +19,7 @@ const Home: FC = () => {
 
       </Head>
       <Nav />
+      {/* UI Library Testing */}
       <main className={styles.main + ' ' + inter.className}>
         <section className={styles.hero}>
 
@@ -31,7 +32,7 @@ const Home: FC = () => {
           ]}
           titleStyle={TitleStyles.red}
         />
-        <Card cardStyle={CardStyles.premium} />
+        <Card cardStyle={CardStyles.standart} />
         <Footer footerStyle={FooterStyles.wave}/>
       </main>
     </>
