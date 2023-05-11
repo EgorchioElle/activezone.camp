@@ -1,13 +1,13 @@
 /* list Component */
 
 .title{
-    @apply text-xl text-white mb-3
-    sm:text-5xl sm:mb-5;
+    @apply text-lg text-white mb-3
+    md:text-4xl sm:mb-5;
 }
 
 .list-item{
-    @apply text-lg text-white pl-2 mb-2
-    sm:text-3xl sm:mb-4 sm:pl-20;
+    @apply text-white pl-2 mb-2
+    md:text-2xl sm:mb-4 sm:pl-16;
 }
 
 .title-red{

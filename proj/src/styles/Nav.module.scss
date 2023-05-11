@@ -53,7 +53,7 @@
 // Burger End --- Modal Start
 
 .modal{
-    @apply fixed w-full h-screen top-0 left-0 transition-all bg-black flex justify-center items-center z-20;
+    @apply fixed w-full h-screen top-0 left-0 transition-all bg-black flex justify-center items-center z-20 md:hidden;
 }
 
 .modal-open{

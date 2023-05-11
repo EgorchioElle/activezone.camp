@@ -9,11 +9,15 @@ module.exports = {
     extend: {
       colors: {
         'primary-100': '#FF4D9C',
-        'primary-200': '#5B4DFF'
+        'primary-200': '#5B4DFF',
+        'gradient-100': 'rgba(0, 172, 193, 0.3)',
+        'gradient-200': 'rgba(255, 77, 156, 0.2)'
       },
       backgroundColor: {
         'primary-100': '#FF4D9C',
-        'primary-200': '#5B4DFF'
+        'primary-200': '#5B4DFF',
+        'gradient-100': 'rgba(0, 172, 193, 0.3)',
+        'gradient-200': 'rgba(255, 77, 156, 0.2)'
       },
       boxShadow: {
         'main-button': '8px 8px 0 #5B4DFF',
@@ -21,6 +25,31 @@ module.exports = {
       },
       transitionDuration: {
         DEFAULT: '400ms'
+      },
+      maxWidth: {
+        '10xl': '1920px'
+      },
+      maxHeight: {
+        'lg': '1080px'
+      },
+      height: {
+        '4screens': '400vh'
+      },
+      backgroundImage: {
+        'hero': 'url(../images/hero-image.png);',
+        'decorations': 'url(../images/svg/decorations.svg);'
+      },
+      width: {
+        '10xl': '1920px'
+      },
+      keyframes: {
+        slideFadeIn: {
+          '0%': { transform: 'translateX(-200%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' }
+        }
+      },
+      animation: {
+        'slide-fade-in': 'slideFadeIn 2s ease-out'
       }
     }
   },

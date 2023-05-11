@@ -6,11 +6,10 @@ import Link from 'next/link';
 import styles from '../styles/Nav.module.scss';
 import logo from '../images/svg/logo-icon.svg';
 
-
 const inter = Inter({ subsets: ['latin'] });
 
 const Nav: FC = () => {
-  const [modalOpen, setModalOpen] = useState<boolean>(true);
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
 
   return (
     <nav className={styles.nav + ' ' + inter.className}>

@@ -1,0 +1,13 @@
+/* Trainer Component */
+
+.trainer{
+    @apply flex flex-col gap-3 scale-75 md:scale-100 items-center;
+}
+
+.trainer-name{
+    @apply text-primary-100 text-xl md:text-4xl;
+}
+
+.trainer-desc{
+    @apply text-white text-lg md:text-xl;
+}

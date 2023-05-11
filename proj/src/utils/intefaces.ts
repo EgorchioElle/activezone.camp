@@ -1,4 +1,4 @@
-import { CardStyles, FooterStyles, TitleStyles } from './enums';
+import { CardStyles, FooterStyles, TitleStyles, Trainers } from './enums';
 
 export interface IList {
     title: string;
@@ -12,4 +12,8 @@ export interface ICard {
 
 export interface IFooter {
     footerStyle?: FooterStyles;
+}
+
+export interface ITrainer {
+    trainer: Trainers;
 }

@@ -1,10 +1,14 @@
 /* Footer Component */
 
 .footer{
-    @apply w-full absolute bottom-0 left-0 flex justify-center;
+    @apply w-full flex justify-center bg-transparent relative md:-mt-56;
+}
+
+.wave{
+    @apply w-full;
 }
 
 .footer-text{
     @apply text-sm text-zinc-200 tracking-widest absolute bottom-2
-    md:text-lg
+    md:text-lg xl:text-2xl;
 }
