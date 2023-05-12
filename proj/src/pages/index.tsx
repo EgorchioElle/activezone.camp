@@ -7,8 +7,6 @@ import styles from '../styles/Home.module.scss';
 
 import stadium from '../images/stadium-image.png';
 import alley from '../images/alley-image.png';
-import fedechkina from '../images/fedechkina-image.png';
-import silnyh from '../images/silnyh-image.png';
 
 import List from '@/components/List';
 import Nav from '@/components/Nav';

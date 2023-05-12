@@ -40,16 +40,22 @@ module.exports = {
         'decorations': 'url(../images/svg/decorations.svg);'
       },
       width: {
-        '10xl': '1920px'
+        '10xl': '1920px',
+        '6xl': '768px'
       },
       keyframes: {
         slideFadeIn: {
           '0%': { transform: 'translateX(-200%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' }
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
         }
       },
       animation: {
-        'slide-fade-in': 'slideFadeIn 2s ease-out'
+        'slide-fade-in': 'slideFadeIn 2s ease-out',
+        'fade-in': 'fadeIn 1s ease-out'
       }
     }
   },
