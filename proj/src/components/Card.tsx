@@ -1,12 +1,14 @@
 import { FC } from 'react';
 import Image from 'next/image';
 
+import { ICard } from '@/utils/intefaces';
+
+import { CardStyles } from '@/utils/enums';
+
 import styles from '../styles/Card.module.scss';
 import premiumCard from '../images/svg/premium-card.svg';
 import standartCard from '../images/svg/standart-card.svg';
 
-import { ICard } from '@/utils/intefaces';
-import { CardStyles } from '@/utils/enums';
 
 
 const Card: FC<ICard> = ({ cardStyle }) => {

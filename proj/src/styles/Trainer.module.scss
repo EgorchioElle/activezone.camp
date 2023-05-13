@@ -1,13 +1,17 @@
 /* Trainer Component */
 
 .trainer{
-    @apply flex flex-col gap-3 scale-75 md:scale-100 items-center;
+    @apply flex flex-col items-center gap-1 md:gap-3;
+}
+
+.trainer-image{
+    @apply w-72 md:w-128 z-20;
 }
 
 .trainer-name{
-    @apply text-primary-100 text-xl md:text-4xl;
+    @apply text-primary-100 md:text-4xl whitespace-nowrap font-semibold;
 }
 
 .trainer-desc{
-    @apply text-white text-lg md:text-xl;
+    @apply text-white text-sm md:text-xl;
 }

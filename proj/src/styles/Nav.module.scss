@@ -1,7 +1,7 @@
 /* Nav Component */
 
 .nav{
-    @apply fixed top-0 left-0 h-16 md:h-28 w-full bg-black z-10 bg-opacity-80
+    @apply fixed top-0 left-0 h-16 md:h-28 w-full bg-black z-30 bg-opacity-80
     flex items-center justify-center sm:justify-between overflow-hidden shadow-nav-shadow;
 }
 

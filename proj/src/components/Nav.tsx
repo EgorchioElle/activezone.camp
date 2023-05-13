@@ -21,7 +21,7 @@ const Nav: FC = () => {
         <span className={styles['span-2']}></span>
         <span className={styles['span-3']}></span>
       </div>
-      
+
       <section className={modalOpen ? styles.modal + ' ' + styles['modal-open'] : styles.modal + ' ' + styles['modal-closed']}>
         <Link className={styles['modal-button']} href="/enroll">Записаться</Link>
       </section>

@@ -41,7 +41,8 @@ module.exports = {
       },
       width: {
         '10xl': '1920px',
-        '6xl': '768px'
+        '6xl': '768px',
+        '128': '512px'
       },
       keyframes: {
         slideFadeIn: {
@@ -51,11 +52,23 @@ module.exports = {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' }
+        },
+        wave: {
+          '0%': { transform: 'translateY(0)', filter: 'hue-rotate(0)' },
+          '50%': { transform: 'translateY(-10px)', filter: 'hue-rotate(-45deg)' },
+          '100%': { transform: 'translateY(0)', filter: 'hue-rotate(0)' }
+        },
+        waveShadow: {
+          '0%': { transform: 'translateY(0)', filter: 'hue-rotate(0)' },
+          '50%': { transform: 'translateY(10px)', filter: 'hue-rotate(-45deg)' },
+          '100%': { transform: 'translateY(0)', filter: 'hue-rotate(0)' }
         }
       },
       animation: {
         'slide-fade-in': 'slideFadeIn 2s ease-out',
-        'fade-in': 'fadeIn 1s ease-out'
+        'fade-in': 'fadeIn 1s ease-out',
+        'wave': 'wave 5s ease-in-out infinite',
+        'wave-shadow': 'waveShadow 5s ease-in-out infinite'
       }
     }
   },

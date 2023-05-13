@@ -1,0 +1,9 @@
+/* Wave Component */
+
+.wave{
+    @apply absolute animate-wave;
+}
+
+.wave-shadow{
+    @apply absolute animate-wave-shadow;
+}

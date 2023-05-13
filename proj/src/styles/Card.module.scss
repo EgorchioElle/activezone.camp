@@ -1,6 +1,6 @@
 /* Card Component */
 
 .card{
-    @apply scale-75 md:scale-90 transition-all
+    @apply w-72 md:w-128 transition-all z-20
     hover:brightness-110 hover:rotate-3;
 }

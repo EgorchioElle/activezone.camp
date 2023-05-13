@@ -3,10 +3,8 @@ import { FC } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-import styles from '../styles/Home.module.scss';
 
-import stadium from '../images/stadium-image.png';
-import alley from '../images/alley-image.png';
+
 
 import List from '@/components/List';
 import Nav from '@/components/Nav';
@@ -14,6 +12,11 @@ import { CardStyles, FooterStyles, TitleStyles, Trainers } from '@/utils/enums';
 import Card from '@/components/Card';
 import Footer from '@/components/Footer';
 import Trainer from '@/components/Trainer';
+import Wave from '@/components/Wave';
+
+import alley from '../images/alley-image.png';
+import stadium from '../images/stadium-image.png';
+import styles from '../styles/Home.module.scss';
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -23,32 +26,33 @@ const Home: FC = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="keywords" content="Active zone, camp, daycamp, summer camp, детский лагерь, дневной лагерь, летний лагерь
+        <meta name="keywords" content="Active zone, camp, daycamp, summer camp, детский лагерь, дневной лагерь, летний лагерь
           легкая атлетика, спорт, спортивный лагерь" />
-          <meta property="description" content="Хотите, чтобы ваш ребенок провел время с пользой пока вы на работе?
+        <meta property="description" content="Хотите, чтобы ваш ребенок провел время с пользой пока вы на работе?
           Тогда доброй пожаловать в летний спортивный лагерь Actize Zone! Здесь ваш ребенок не просто хорошо потренеруется,
           но и вкусно покушает, поучаствует в спортивных мероприятиях на ценный призы и зведет много друзей! Ждем вас на смене с 1 по 14 июля!" />
-          <meta name="Author" content="Савельев Егор Антонович" />
-          <meta name="Copyright" content="ActiveZone 2023" />
-          <title>Actice Zone: Детский спортивный лагерь в Качканаре</title>
-          <link rel="icon" href="/favicon.ico" />
-          {/* Facebook */}
-          <meta property="og:locale" content="eng_Eng" />
-          <meta property="og:title" content="Actice Zone: Детский спортивный лагерь в Качканаре" />
-          <meta property="og:description" content="Хотите, чтобы ваш ребенок провел время с пользой пока вы на работе?
+        <meta name="Author" content="Савельев Егор Антонович" />
+        <meta name="Copyright" content="ActiveZone 2023" />
+        <title>Actice Zone: Детский спортивный лагерь в Качканаре</title>
+        <link rel="icon" href="/favicon.png" />
+        {/* Facebook */}
+        <meta property="og:locale" content="eng_Eng" />
+        <meta property="og:title" content="Actice Zone: Детский спортивный лагерь в Качканаре" />
+        <meta property="og:description" content="Хотите, чтобы ваш ребенок провел время с пользой пока вы на работе?
           Тогда доброй пожаловать в летний спортивный лагерь Actize Zone! Здесь ваш ребенок не просто хорошо потренеруется,
           но и вкусно покушает, поучаствует в спортивных мероприятиях на ценный призы и зведет много друзей! Ждем вас на смене с 1 по 14 июля!" />
-          <meta property="og:site_name" content="ActiveZone.camp" />
-        </Head>
+        <meta property="og:site_name" content="ActiveZone.camp" />
+      </Head>
       <Nav />
       <main className={styles.main + ' ' + inter.className}>
         <header className={styles.hero}>
           <div className={styles['hero-text']}>
             <h1 className={styles.title}>Детский спортивный лагерь</h1>
             <h2 className={styles.subtitle}>Дневного пребывания</h2>
-          </div>    
+          </div>
         </header>
         <div className={styles.wrapper}>
+
           <section className={styles['location-and-inventory']}>
             <div className={styles.lists}>
               <h1 className={styles['lists-title']}>Расположение и инвентарь</h1>
@@ -71,7 +75,7 @@ const Home: FC = () => {
               />
             </div>
             <Image className={styles.image} src={stadium} alt="стадион Горняк, Качканар" />
-          </section>      
+          </section>
           <section className={styles['day-timetable']}>
             <Image className={styles.image} src={alley} alt="Аллея Спорта, Качканар" />
             <div className={styles.lists}>
@@ -101,22 +105,24 @@ const Home: FC = () => {
                 titleStyle={TitleStyles.red}
               />
             </div>
-          </section>      
+          </section>
+          <Wave />
           <section className={styles.trainers}>
             <h1 className={styles['pre-title']}>Тренера</h1>
             <div className={styles['trainers-section']}>
               <Trainer trainer={Trainers.fedechkina} />
               <Trainer trainer={Trainers.silnyh} />
             </div>
-          </section>      
+          </section>
+          <Wave />
           <section className={styles.trainers}>
             <h1 className={styles['pre-title']}>Тарифы</h1>
-            <div className={styles['trainers-section']}>
+            <div className={styles['cards-section']}>
               <Card cardStyle={CardStyles.premium} />
               <Card cardStyle={CardStyles.standart} />
             </div>
-          </section>      
-          <Footer footerStyle={FooterStyles.wave}/>
+          </section>
+          <Footer footerStyle={FooterStyles.wave} />
         </div>
       </main>
     </>

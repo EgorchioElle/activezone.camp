@@ -43,7 +43,7 @@
 // Hero end --- Location start
 
 .lists{
-    @apply w-full flex flex-col items-start gap-4 py-12 px-8 md:gap-10 
+    @apply w-full flex flex-col items-start gap-4 py-6 px-8 md:gap-10 
     lg:mx-auto lg:my-auto lg:w-auto;
 }
 
@@ -71,12 +71,12 @@
 
 
 .pre-title{
-    @apply text-white text-3xl md:text-5xl my-8 relative mx-auto w-auto text-center mb-8 md:mb-24;
+    @apply text-white text-3xl md:text-5xl my-8 relative mx-auto w-auto text-center mb-16 md:mb-32 md:translate-y-16;
 }
 
 .pre-title::before{
     content: '';
-    @apply py-0.5 px-16 bg-primary-200 absolute -bottom-4 left-1/2 sm:px-28 md:py-1 md:-bottom-6;
+    @apply py-0.5 px-16 bg-primary-200 absolute -bottom-4 left-1/2 sm:px-28 md:py-1 md:-bottom-6 lg:bg-transparent;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -88,6 +88,11 @@
     @apply w-full mb-8 md:mb-24;
 }
 
+.cards-section,
 .trainers-section{
-    @apply w-full flex flex-wrap md:gap-32 justify-center;
+    @apply w-full flex flex-wrap gap-8 md:gap-32 justify-center;
+}
+
+.cards-section{
+    @apply gap-8 md:gap-24;
 }
