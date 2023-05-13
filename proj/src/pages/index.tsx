@@ -118,8 +118,8 @@ const Home: FC = () => {
           <section className={styles.trainers}>
             <h1 className={styles['pre-title']}>Тарифы</h1>
             <div className={styles['cards-section']}>
-              <Card cardStyle={CardStyles.premium} />
               <Card cardStyle={CardStyles.standart} />
+              <Card cardStyle={CardStyles.premium} />
             </div>
           </section>
           <Footer footerStyle={FooterStyles.wave} />
