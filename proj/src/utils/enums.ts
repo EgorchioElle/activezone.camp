@@ -1,9 +1,10 @@
+
 export enum TitleStyles {
     blue = 'title-blue',
     red = 'title-red'
 }
 
-export enum CardStyles {
+export enum TariffVariants {
     premium = 'premium',
     standart = 'standart'
 }

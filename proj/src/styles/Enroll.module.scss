@@ -1,11 +1,11 @@
 /* Enroll Page */
 
 .header{
-    @apply w-full h-screen bg-hero bg-cover flex justify-center animate-fade-in;
+    @apply w-full h-screen bg-gradient-to-tr from-cyan-300 to-pink-300 flex justify-center items-center animate-fade-in;
 }
 
 .content{
-    @apply bg-black bg-opacity-80 h-full text-center flex flex-col justify-center items-center w-6xl relative px-8;
+    @apply bg-black rounded-3xl h-7xl justify-center flex flex-col w-6xl relative px-8 mx-12 shadow-form-shadow;
 }
 
 .logo{
@@ -13,7 +13,7 @@
 }
 
 .title{
-    @apply text-white text-3xl md:text-5xl my-8 relative mx-auto w-auto text-center mb-8 md:mb-12;
+    @apply text-white text-xl md:text-3xl my-8 relative mx-auto w-auto mb-16;
 }
 
 .title::before{
@@ -26,31 +26,45 @@
     -o-transform: translateX(-50%);
 }
 
-.paragraph-red,
-.paragraph-blue{
-    @apply text-lg md:text-2xl;
+.button{
+    @apply text-white text-2xl bg-primary-100 px-8 py-4 rounded-full transition-all
+    uppercase tracking-widest shadow-main-button mr-16
+    hover:bg-primary-200 hover:shadow-none;
 }
 
-.paragraph-red{
-    @apply text-primary-100  mb-6 md:mb-10;
-}
-
-.paragraph-blue{
-    @apply text-primary-200;
-}
-
-.list{
-    @apply flex flex-col gap-5;
-}
-
-.list-item{
-    @apply text-white text-xl md:text-3xl whitespace-nowrap;
-}
-
-.prompt{
-    @apply text-zinc-400 mb-8;
+.paragraph{
+    @apply md:text-lg text-zinc-500 mb-12;
 }
 
 .footer{
-    @apply text-zinc-300 absolute bottom-2;
+    @apply text-zinc-300 bg-black h-24 flex justify-center items-center w-full;
+}
+
+// Form styling
+
+.user-box {
+    @apply relative;
+}
+  
+.user-box input {
+    @apply focus:border-b-primary-100 valid:border-b-primary-100 transition-all w-full p-2 
+    text-lg text-white mb-7 border-b-2 outline-none bg-transparent;
+}
+
+.user-box label {
+    @apply absolute top-0 left-0 py-2 text-lg text-white pointer-events-none transition-all;
+}
+  
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    @apply text-primary-100 -top-5 text-sm left-0;
+}
+
+.select{
+    @apply w-full p-2 focus:border-b-primary-100 transition-all
+    text-lg text-white mb-7 border-b-2 outline-none bg-transparent;
+}
+
+.select option{
+    @apply bg-black;
 }

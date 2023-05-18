@@ -1,4 +1,4 @@
-import { CardStyles, FooterStyles, TitleStyles, Trainers } from './enums';
+import { TariffVariants, FooterStyles, TitleStyles, Trainers } from './enums';
 
 export interface IList {
     title: string;
@@ -6,8 +6,8 @@ export interface IList {
     titleStyle: TitleStyles;
 }
 
-export interface ICard {
-    cardStyle: CardStyles;
+export interface ITariff {
+    cardStyle: TariffVariants;
 }
 
 export interface IFooter {

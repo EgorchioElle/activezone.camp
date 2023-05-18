@@ -3,12 +3,9 @@ import { FC } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-
-
-
 import List from '@/components/List';
 import Nav from '@/components/Nav';
-import { CardStyles, FooterStyles, TitleStyles, Trainers } from '@/utils/enums';
+import { TariffVariants, FooterStyles, TitleStyles, Trainers } from '@/utils/enums';
 import Card from '@/components/Card';
 import Footer from '@/components/Footer';
 import Trainer from '@/components/Trainer';
@@ -118,8 +115,8 @@ const Home: FC = () => {
           <section className={styles.trainers}>
             <h1 className={styles['pre-title']}>Тарифы</h1>
             <div className={styles['cards-section']}>
-              <Card cardStyle={CardStyles.standart} />
-              <Card cardStyle={CardStyles.premium} />
+              <Card cardStyle={TariffVariants.standart} />
+              <Card cardStyle={TariffVariants.premium} />
             </div>
           </section>
           <Footer footerStyle={FooterStyles.wave} />

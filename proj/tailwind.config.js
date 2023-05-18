@@ -21,7 +21,8 @@ module.exports = {
       },
       boxShadow: {
         'main-button': '8px 8px 0 #5B4DFF',
-        'nav-shadow': '0 4px 0 rgba(0, 0, 0, 0.25)'
+        'nav-shadow': '0 4px 0 rgba(0, 0, 0, 0.25)',
+        'form-shadow': '8px 8px 0 rgba(0, 0, 0, 0.25)'
       },
       transitionDuration: {
         DEFAULT: '400ms'
@@ -33,7 +34,8 @@ module.exports = {
         'lg': '1080px'
       },
       height: {
-        '4screens': '400vh'
+        '4screens': '400vh',
+        '7xl': '640px'
       },
       backgroundImage: {
         'hero': 'url(../images/hero-image.png);',
@@ -41,7 +43,7 @@ module.exports = {
       },
       width: {
         '10xl': '1920px',
-        '6xl': '768px',
+        '6xl': '480px',
         '128': '512px'
       },
       keyframes: {
